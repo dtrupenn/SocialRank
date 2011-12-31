@@ -1,0 +1,44 @@
+Full name: Daniel Trujillo
+SEAS login: dtru
+
+Description of features implemented:
+Implemented an initial mapper to put the values into its intermediate format that is passed to the iter mapper for a certain number of iterations. You can check the max difference between current node values and previous node values through the diff1 and diff2 functions. Lastly you can output the list of nodes with their perspective values in descending order through the final map reduce function. 
+
+Extra credits claimed:
+None
+
+List of source files included (consider using `find src | grep java`)
+src/edu/upenn/mkse/mkse212/hw3/SocialRankIterReducer.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankFinishReducer.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankDiff2Reducer.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankInitReducer.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankDriver.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankDiff1Reducer.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankDiff1Mapper.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankInitMapper.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankFinishMapper.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankDiff2Mapper.java
+src/edu/upenn/mkse/mkse212/hw3/SocialRankIterMapper.java
+
+Outside sources used:
+-Hadoop, The Definitive Guide (textbook)
+
+Special instructions for building or running:
+init<inputDir><outputDir><#reducers>
+iter<inputDir><outputDir><#reducers>
+diff1<inputDir><outputDir><#reducers>
+diff2<inputDir><outputDir>
+finish<inputDir><outputDir><#reducers>
+Used a single reducer for finish to have a single output file instead of multiple parts. Otherwise I used 20 reducers when the option was available.
+
+TOP TEN NODES:
+852     1064.1693262853353
+44129   926.7760310785852
+30943   903.5175378536451
+86152   844.236050703438
+3586    728.3564401354573
+14277   636.7607842504535
+509     373.42764883030054
+242340  337.6502188614778
+109482  304.69000432159885
+54631   304.2052325666233
